@@ -3,7 +3,6 @@ plugins {
 }
 
 version '1.0-Ece-Snapshot'
-sourceCompatibility = 1.8
 
 repositories {
   mavenCentral()
