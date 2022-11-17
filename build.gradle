@@ -1,0 +1,14 @@
+plugins {
+	id 'java'
+}
+
+version '1.0-Ece-Snapshot'
+sourceCompatibility = 1.8
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'org.angie:angiegal-party:1.0'
+}
