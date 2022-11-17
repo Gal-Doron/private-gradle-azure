@@ -1,13 +1,22 @@
 plugins {
 	id 'java'
+	id "net.linguica.maven-settings" version "0.5"
+	id 'maven-publish'
 }
 
-version '1.0-Ece-Snapshot'
+group = 'org.groovy'
+version = '1.0'
 
 repositories {
-  mavenCentral()
+maven {
+    url 'https://pkgs.dev.azure.com/angierWS/_packaging/Maven/maven/v1'
+    name 'Maven'
+    authentication {
+        basic(BasicAuthentication)
+    }
+}
 }
 
 dependencies {
-  implementation 'org.mend:angies-party:1.0'
+	implementation 'org.mend:angies-party:1.0'
 }
