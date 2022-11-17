@@ -10,5 +10,5 @@ repositories {
 }
 
 dependencies {
-  implementation 'org.angie:angiegal-party:1.0'
+  implementation 'org.mend:angies-party:1.0'
 }
